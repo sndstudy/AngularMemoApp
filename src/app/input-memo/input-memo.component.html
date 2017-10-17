@@ -1,0 +1,7 @@
+<div class="black-frame">
+  <p>メモを入力して下さい</p>
+  <textarea rows="4" [(ngModel)]="inputData" ></textarea>
+  <br>
+  <button (click)="send()">送信</button>
+</div>
+<app-memo [memoList]="sendMemo"></app-memo>
